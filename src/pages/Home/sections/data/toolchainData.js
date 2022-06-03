@@ -17,23 +17,23 @@ export default {
                 {
                   items: [
                     {
-                      label: "vscode"
+                      label: "vscode",
                     },
                     {
-                      label: "tool1"
-                    }
-                  ]
+                      label: "tool1",
+                    },
+                  ],
                 },
                 {
                   items: [
                     {
-                      label: "vscode"
-                    }
-                  ]
+                      label: "vscode",
+                    },
+                  ],
                 },
-              ]
-            }
-          ]
+              ],
+            },
+          ],
         },
         {
           label: "design",
@@ -44,13 +44,15 @@ export default {
               direction: "column",
               items: [
                 {
-                  items: [{
-                    label: "tool name"
-                  }]
-                }
-              ]
-            }
-          ]
+                  items: [
+                    {
+                      label: "tool name",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
         {
           label: "design",
@@ -64,23 +66,23 @@ export default {
                 {
                   items: [
                     {
-                      label: "vscode"
+                      label: "vscode",
                     },
                     {
-                      label: "tool1"
-                    }
-                  ]
+                      label: "tool1",
+                    },
+                  ],
                 },
                 {
                   items: [
                     {
-                      label: "vscode"
-                    }
-                  ]
+                      label: "vscode",
+                    },
+                  ],
                 },
-              ]
-            }
-          ]
+              ],
+            },
+          ],
         },
         {
           label: "design",
@@ -91,13 +93,15 @@ export default {
               direction: "column",
               items: [
                 {
-                  items: [{
-                    label: "tool name"
-                  }]
-                }
-              ]
-            }
-          ]
+                  items: [
+                    {
+                      label: "tool name",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
         {
           label: "design",
@@ -111,23 +115,23 @@ export default {
                 {
                   items: [
                     {
-                      label: "vscode"
+                      label: "vscode",
                     },
                     {
-                      label: "tool1"
-                    }
-                  ]
+                      label: "tool1",
+                    },
+                  ],
                 },
                 {
                   items: [
                     {
-                      label: "vscode"
-                    }
-                  ]
+                      label: "vscode",
+                    },
+                  ],
                 },
-              ]
-            }
-          ]
+              ],
+            },
+          ],
         },
         {
           label: "design",
@@ -138,13 +142,15 @@ export default {
               direction: "column",
               items: [
                 {
-                  items: [{
-                    label: "tool name"
-                  }]
-                }
-              ]
-            }
-          ]
+                  items: [
+                    {
+                      label: "tool name",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
