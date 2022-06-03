@@ -2,8 +2,8 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
+import ToolItem from "pages/Home/components/ToolItem";
 import toolchainData from "pages/Home/sections/data/toolchainData";
 
 let key = 0;
@@ -69,9 +69,7 @@ function Toolchain() {
                       >
                         {(tools.items || []).map((tool) => (
                           <Grid item xs key={tool.id}>
-                            <MKButton color="light" fullWidth>
-                              {tool.label}
-                            </MKButton>
+                            <ToolItem label={tool.label} />
                           </Grid>
                         ))}
                       </Grid>
