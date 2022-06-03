@@ -22,7 +22,7 @@ function Toolchain() {
     <MKBox display="flex" alignItems="center" borderRadius="xl" my={2} py={6}>
       <Container>
         {data.items.map((row) => (
-          <Grid container key={row.id} item xs={12} lg={12} sx={12}>
+          <Grid container key={row.id} item xs={12} lg={12}>
             {(row.items || []).map((col) => (
               <MKBox
                 key={col.id}
@@ -33,8 +33,8 @@ function Toolchain() {
                 width={col.width}
               >
                 <MKBox height="50px" textAlign="center" bgColor="dark" lineHeight={1}>
-                  <MKTypography variant="h4" color="light" fontWeight="bold">
-                    {col.label ? col.label : "label is null"}
+                  <MKTypography variant="h4" display="inline" color="light" fontWeight="bold">
+                    {col.label}
                   </MKTypography>
                 </MKBox>
                 {(col.items || []).map((group) => (
@@ -43,13 +43,20 @@ function Toolchain() {
                     mt={1}
                     p={1}
                     textAlign="center"
-                    bgColor="gray"
+                    bgColor="grey-500"
                     borderRadius="xl"
+                    height={group.height || "200px"}
                     lineHeight={1}
                   >
                     <MKBox p={1} textAlign="center" lineHeight={1}>
-                      <MKTypography key={group.id} color="light" variant="h6" fontWeight="bold">
-                        {group.label ? group.label : "label is null"}
+                      <MKTypography
+                        key={group.id}
+                        display="inline"
+                        color="white"
+                        variant="h6"
+                        fontWeight="bold"
+                      >
+                        {group.label}
                       </MKTypography>
                     </MKBox>
                     {(group.items || []).map((tools) => (
@@ -62,7 +69,7 @@ function Toolchain() {
                       >
                         {(tools.items || []).map((tool) => (
                           <Grid item xs key={tool.id}>
-                            <MKButton color="info" fullWidth>
+                            <MKButton color="light" fullWidth>
                               {tool.label}
                             </MKButton>
                           </Grid>
